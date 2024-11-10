@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0; /* Changed from 2px to 0 */
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #007bff;
+    --button-background: #ffffff;
+    --button-text: #000000;
+}
+/* navbar */
+.logo {
+    color: #2ecc71;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+.logo span {
+    color: #27ae60;
+}
+
+.btn {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 1px solid var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #2ecc71;
+}
+
+/* home */
+
+/* animation */
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-left {
+    animation: slide-in-left 1s ease-out;
+  }
+  /*end animation */
+.home {
+    background: url(images/home_pic.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0 2rem; /* Added padding to the home section */
+}
+
+
+.row {
+    min-height: 80vh;
+}
+
+/* about */
+
+.about {
+    padding: 5rem;
+}
+
+
+.content h3 {
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #709a6f;
+
+}
+
+
+
+.content span {
+    color: #7ab075;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content img {
+    padding: 2rem;
+}
+
+
+/* services */
+
+.services {
+    background-color: whitesmoke;
+    padding: 4rem 0;
+  }
+  
+  .container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #709a6f;
+  }
+  
+  .title p {
+    color: #666;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .b {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem; 
+    margin-bottom: 2rem;
+    text-align: center;
+    width: calc(33.333% - 1rem);
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+  }
+  
+  .b img.service_image_details {
+    width: 70px;  
+    height: 70px; 
+    margin-bottom: 1rem;
+  }
+  
+  .b h4 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+  }
+  
+  .b p {
+    color: rgb(92, 92, 92);
+    word-wrap: break-word;
+  }
+  
+  .b:hover {
+    background-color: rgb(175, 244, 205);
+  }
+  
+  
+  
+ 
+  @media (max-width: 1024px) {
+    .b {
+      width: calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .b {
+      width: 100%;
+    }
+  }
+  
+/* slide-in-left animation */
+@keyframes container {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  .b {
+    animation: slide-in-left 1s ease-out;
+  }
+/* home */
+
+
+.home .content {
+  max-width: 54rem;
+  text-align: left; 
+  
+}
+
+.doctor .container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+
+
+.doctor-card {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto; 
+}
+
+.doctor-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+h3 {
+    margin: 10px 0 5px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+h4 {
+    margin: 5px 0 20px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+  
+/*contact*/
+.container3 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  min-height: 100vh; /* Adjust height as needed */
+}
+
+.information {
+  background-color: white;
+  width: 100%; /* Use 100% width for responsiveness */
+  max-width: 35rem; /* Set the maximum width to 35rem */
+  margin: auto; /* Center the block horizontally */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.contact form .message{
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  background-color: #91ccaa;
+  padding: 1.2rem 1rem;
+  font-size: 1.7rem;
+  color: #000;
+  text-align: center;
+
+}
+
+.contact {
+    background-color: whitesmoke;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.info {
+    display: block;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.info input {
+    border: 1px solid #27ae60;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.info input:hover {
+    border: 1.8px solid #3c604d;
+}
+
+
+
+
+.information label {
+    display: block;
+    text-align: left;
+    font-size: large;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titre h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #709a6f;
+    margin-bottom: 2rem;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(219, 249, 219);
+    padding: 6rem;
+    text-align: center;
+}
+
+.container4 h3 {
+    font-size: larger;
+    font-family: "Poppins", sans-serif;
+}
+
+.container4 i {
+    font-size: x-large;
+    color: black;
+}
+
+.inf {
+    max-width: 25%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    section {
+        padding: 7rem 2rem;
+    }a
+
+    .home,
+    .about,
+    .contact {
+        background-size: contain;
+    }
+
+    .services {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 0px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .information {
+        padding: 10px;
+    }
+
+    .info label {
+        margin-top: 5px;
+    }
+
+    .info input {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 1200px) {
+    .information {
+        max-width: 800px; 
+        padding: 30px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .information {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .information {
+        padding: 10px;
+    }
+   
+}
+@media (min-width: 768px) {
+  .information {
+    width: 35rem;
+  }
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container4 {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  
+    .inf {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .inf:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+
+
+
+  .map-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Ensure the map-block does not exceed the width of the container */
+.map-block {
+    max-width: 100%;
+}
+
+/* Media queries for additional responsiveness if needed */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+  
+    .map-block {
+        width: 100%;
+    }
+  
+    .opening-hours-block {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+  
+    .map-responsive {
+        padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
+    }
+}

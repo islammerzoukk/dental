@@ -1,0 +1,78 @@
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.opening-hours-block {
+    width: 25%;
+    padding-left: 20px;
+    margin-left: 50px;
+}
+
+.opening-hours-block h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.opening-hours-block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.opening-hours-block li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #000000;
+}
+
+.map-block {
+    width: 65%;
+    padding-right: 20px;
+    margin-right: 50px;
+}
+
+.map-block h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .opening-hours-block, .map-block {
+        width: 100%;
+        padding: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+
+    .opening-hours-block li {
+        padding: 5px 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .contact-section {
+        align-items: flex-start;
+    }
+
+    .map-block, .opening-hours-block {
+        height: auto;
+        overflow: hidden;
+    }
+
+}
